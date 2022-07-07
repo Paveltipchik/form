@@ -1,10 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
     <head>
-
+        <meta charset="utf-8">
     </head>
     <body>
-        
+        <form>
+            <fieldset class="personal-information">
+                <!-- персональные данные-->
+                <legend>
+                Personal information
+            </legend>
+            <label for="surname">
+                <p>Surname:
+                <input type="text" name="username" id="surname" required></p>
+            </label>
+            <label for="name">
+                <p>Name:
+                <input type="text" name="name" id="name" required></p>
+            </label>
+            <label for="age">
+                <p>How old are you?
+                    <input type="number" name="cost" placeholder="12" id="age" required>
+                </p>
+            </label>
+            <label for="birthday">
+                <p>
+                    Full date of birth:
+                    <input type="date" name="birthday" id="birthday" required>
+                </p>
+            </label>
+            <label>    
+                <p>
+                    I accept the term of the agreement
+                    <input type="checkbox" name="accept" required>
+                </p>
+            </label>
+        </fieldset>
+        <!-- регистрация -->
+        <fieldset class="registration">
+            <legend>
+                Registration 
+            </legend>
+                <label for="email">
+                    <p>
+                        E-mail:
+                        <input type="email" name="email-address" placeholder="email@example.com" id="email" required>
+                    </p>
+                </label>
+                <label for="userPassword">
+                    <p>
+                        Password:
+                        <input name="Password" id="userPassword" type="password" required>
+                    </p>
+                </label>
+        </fieldset>
+        <!-- интересные факты о Вас -->
+        <fieldset class="facts">
+            <legend>
+                An interesting fact about you!
+            </legend>
+            <label for="cats">
+                <p>
+                    Do you love cats?
+                    <input type="radio" name="cats" value="Yes" id="cats">Yes
+                    <input type="radio" name="cats" value="No" id="cats">No
+                </p>
+            </label>
+            <label for="color">
+                <p>
+                    What is you favodite color?
+                    <input type="color" name="favorite" id="color">
+                </p>
+            </label>
+            <label for="sleeptime">
+                <p>
+                    What time do you go to bed?
+                    <input type="time" name="appt-time" step="2" min="18:00" max="00:00" id="sleeptime">
+                </p>
+            </label>
+            <label class="cars">
+                <p>
+                    What are you favorite brand of cars?
+                    <select name="brand" multiple>
+                        <option value="BMV" >BMV</option>
+                        <option value="Audi">Audi</option>
+                        <option value="Lada">Lada</option>
+                    </select> 
+                </p>
+            </label>
+            <label>
+                <p>
+                    How do you rate our work?
+                    <input name="grade" type="range" min="0" max="100" value="0">
+                </p>
+            </label>
+        </fieldset>
+        <!--Дополнительная информация-->
+        <fieldset class="addinfo">
+            <legend>
+                Additional info:
+            </legend>
+            <label>
+                <p>
+                    Comments:
+                    <textarea name="comment"></textarea>
+                </p>
+            </label>
+            <label>
+                <p>
+                    Would you recommend us?
+                    <select name="answer">
+                        <option value="yes" selected>yes</option>
+                        <option value="no">no</option>
+                    </select>
+                </p>
+            </label>
+        </fieldset>
+        </form>
     </body>
 
 </html>
