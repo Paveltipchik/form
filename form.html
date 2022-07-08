@@ -4,7 +4,7 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <form>
+        <form autocomplete="off" onsubmit="onSubmit('Thanks')">
             <fieldset class="personal-information">
                 <!-- персональные данные-->
                 <legend>
@@ -50,7 +50,7 @@
                 <label for="userPassword">
                     <p>
                         Password:
-                        <input name="Password" id="userPassword" type="password" required>
+                        <input name="Password" id="userPassword" type="password" required minlength="5">
                     </p>
                 </label>
         </fieldset>
@@ -81,7 +81,7 @@
             <label class="cars">
                 <p>
                     What are you favorite brand of cars?
-                    <select name="brand" multiple>
+                    <select multiple name="brand">
                         <option value="BMV" >BMV</option>
                         <option value="Audi">Audi</option>
                         <option value="Lada">Lada</option>
@@ -103,7 +103,7 @@
             <label>
                 <p>
                     Comments:
-                    <textarea name="comment"></textarea>
+                    <textarea name="comment" maxlength="100"></textarea>
                 </p>
             </label>
             <label>
@@ -116,6 +116,7 @@
                 </p>
             </label>
         </fieldset>
+        <button type="submit" value="Отправить"> Отправить </button>
         </form>
     </body>
 
